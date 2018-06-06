@@ -3,14 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vpnType": {
-          "type": "string",
-          "metadata": {
-            "description": "Route based or policy based"
-          },
-          "defaultValue": "RouteBased",
-          "allowedValues": [
-            "RouteBased"
-          ]
+          "value": "RouteBased"
         },
         "localGatewayName": {
           "value": "localGateway"
