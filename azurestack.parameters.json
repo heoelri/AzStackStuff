@@ -42,10 +42,7 @@
           "value": "AzureStack-Gateway-Azure-S2SGateway"
         },
         "sharedKey": {
-          "type": "securestring",
-          "metadata": {
-            "description": "Shared key (PSK) for IPSec tunnel"
-          }
+          "value": "securestring"
         }
     }
   }
