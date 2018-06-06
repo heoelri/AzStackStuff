@@ -1,5 +1,113 @@
 {
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": { }
+    "parameters": {
+        "vpnType": {
+          "type": "string",
+          "metadata": {
+            "description": "In Azure Stack only Route based is available"
+          },
+          "defaultValue": "RouteBased",
+          "allowedValues": [
+            "RouteBased"
+          ]
+        },
+        "localGatewayName": {
+          "type": "string",
+          "defaultValue": "Azure-S2SGateway",
+          "metadata": {
+            "description": "Arbitrary name for gateway resource representing Azure."
+          }
+        },
+        "localGatewayIpAddress": {
+          "type": "string",
+          "defaultValue": "1.1.1.1",
+          "metadata": {
+            "description": "Public IP of your Azure VPN Gateway Instance"
+          }
+        },
+        "localAddressPrefix": {
+          "type": "array",
+          "defaultValue": [
+            "10.100.102.0/24"
+          ],
+          "metadata": {
+            "description": "CIDR block representing the address space of the Azure VPN network's Subnet"
+          }
+        },
+        "virtualNetworkName": {
+          "type": "string",
+          "defaultValue": "ApplicationvNet",
+          "metadata": {
+            "description": "Azure Stack vNet - Application vNet"
+          }
+        },
+        "azureVNetAddressPrefix": {
+          "type": "string",
+          "defaultValue": "10.100.100.0/23",
+          "metadata": {
+            "description": "Azure Stack vNet - Application vNet - Address Range"
+          }
+        },
+        "subnetName": {
+          "type": "string",
+          "defaultValue": "ApplicationSubnet",
+          "metadata": {
+            "description": "Azure Stack vNet - Application Subnet"
+          }
+        },
+        "subnetPrefix": {
+          "type": "string",
+          "defaultValue": "10.100.100.0/24",
+          "metadata": {
+            "description": "CIDR block for VM subnet, subset of azureVNetAddressPrefix address space"
+          }
+        },
+        "gatewaySubnetPrefix": {
+          "type": "string",
+          "defaultValue": "10.100.101.0/24",
+          "metadata": {
+            "description": "CIDR block for gateway subnet, subset of azureVNetAddressPrefix address space"
+          }
+        },
+        "gatewayPublicIPName": {
+          "type": "string",
+          "defaultValue": "AzureStack-GatewayPublicIP",
+          "metadata": {
+            "description": "Arbitrary name for public IP resource used for the new azure gateway"
+          }
+        },
+        "gatewayName": {
+          "type": "string",
+          "defaultValue": "AzureStack-Gateway",
+          "metadata": {
+            "description": "Arbitrary name for the new gateway"
+          }
+        },
+        "gatewaySku": {
+          "type": "string",
+          "defaultValue": "Basic",
+          "allowedValues": [
+            "Basic",
+            "Standard",
+            "HighPerformance"
+          ],
+          "metadata": {
+            "description": "The Sku of the Gateway. This must be one of Basic, Standard or HighPerformance."
+          }
+        },
+        "connectionName": {
+          "type": "string",
+          "defaultValue": "AzureStack-Gateway-Azure-S2SGateway",
+          "metadata": {
+            "description": "Arbitrary name for the new connection between Azure VNet and other network"
+          }
+        },
+        "sharedKey": {
+          "type": "securestring",
+          "metadata": {
+            "description": "Shared key (PSK) for IPSec tunnel"
+          }
+        }
+    }
   }
