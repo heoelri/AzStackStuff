@@ -29,5 +29,10 @@ Copy the content of **azuredeploy.json** in 201-site-to-site-vpn Template and cr
 | GATEWAYSKU | basic |
 | CONNECTIONNAME | VPN-left-to-right |
 | SHAREDKEY | secretkey |
-
+| VMNAME | leftNode1 |
+| VMSIZE | Standard_A1 |
+| ADMINUSERNAME | adminuser1 |
+| ADMINPASSWORD | P@ssw0rd1 |
+| NEWSTORAGEACCOUNTNAME | leftstorage |
+| STORAGEACCOUNTTYPE | Standard_LRS |
 
