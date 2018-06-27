@@ -2,6 +2,6 @@
 Azure Stack Stuff
 
 Networking
- * Site-to-Site VPN
+ * Lab 1 - [Site-to-Site VPN](/AzSLabs/Networking/101-S2S-VPN)
  
 Storage
