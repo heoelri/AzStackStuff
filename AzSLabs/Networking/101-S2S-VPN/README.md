@@ -1,6 +1,10 @@
-Goto Azure Quick Start Templates on [GitHub](https://github.com/Azure/azure-quickstart-templates/tree/master/201-site-to-site-vpn).
+Goto the 201-site-to-site Template on Azure Quick Start Templates on [GitHub](https://github.com/Azure/azure-quickstart-templates/tree/master/201-site-to-site-vpn).
+
+> This template will create a Virtual Network, a subnet for the network, a Virtual Network Gateway and a Connection to your network outside of Azure (defined as your local network). This could be anything such as your on-premises network and can even be used with other cloud networks such as AWS Virtual Private Cloud. It also provisions an Ubuntu instance attached to the Azure Virtual Network so that you can test connectivity.
 
 Copy the content of **azuredeploy.json** in 201-site-to-site-vpn Template and create a new Template Deployment in Azure Stack.
+
+
 
  1. Click on "+ New" and search for Template Deployment.
  2. Copy the content into the code editor
