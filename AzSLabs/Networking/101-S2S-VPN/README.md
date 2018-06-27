@@ -17,12 +17,12 @@ Copy the content of **azuredeploy.json** in 201-site-to-site-vpn Template and cr
 | ------------- | --------- |
 | VPNTYPE | RouteBased | 
 | LOCALGATEWAYNAME | localgateway |
-| LOCALGATEWAYIPADDRESS | |
-| LOCALADDRESSPREFIX | |
+| LOCALGATEWAYIPADDRESS | 1.1.1.1 |
+| LOCALADDRESSPREFIX | 10.4.0.0/16 |
 | VIRTUALNETWORKNAME | leftvnet |
 | AZUREVNETADDRESSPREFIX | 10.3.0.0/16 |
-| SUBNETNAME | Subnet1 |
-| SUBNETPREFIX | |
+| SUBNETNAME | LeftSubnet1 |
+| SUBNETPREFIX | 10.3.1.0/24 |
 | GATEWAYSUBNETPREFIX | 10.3.200.0/29 |
 | GATEWAYPUBLICIPNAME | leftGatewayIP |
 | GATEWAYNAME | leftGateway | 
