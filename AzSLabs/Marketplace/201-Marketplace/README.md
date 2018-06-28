@@ -2,8 +2,13 @@
 
 ## Task 1: Download marketplace items using Portal
  * Click **More Services** 
- * **Marketplace Management**
+ * Click **Marketplace Management**
+ 
+ ![img1](img/marketplace_1.png)
+ 
  * **+Add from Azure**
+ 
+ ![img2](img/marketplace_2.png)
 
  * Search and Select following items one by one from Marketplace
 
