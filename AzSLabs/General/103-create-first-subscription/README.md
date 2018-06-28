@@ -32,8 +32,11 @@ Even as an Azure Stack Administrator, you're not able to deploy resources within
 12. Click on "Create" to create your Default Offer
 
 **Create a Subscription**
-1. 
-2. Click on "More services" and "User subscriptions"
-3. In "User subscriptions" click on "+ Add" to create a new subscription
-4. Create a "new user subscription" for your AzureAD account
-5. in 
+1. Click on "More services" and "User subscriptions"
+2. In "User subscriptions" click on "+ Add" to create a new subscription
+3. Create a "new user subscription" for your AzureAD account
+4. Click on "Select an offer" and select your previously created "default-offer"
+
+![img6](img/newsub_1.png)
+
+5. Click on "Create" to create your Subscription
