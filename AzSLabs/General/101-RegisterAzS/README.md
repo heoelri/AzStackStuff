@@ -44,3 +44,10 @@ $privilegedEndpoint       = "AzS-ERCS01"
 ```powershell
 Set-AzsRegistration -PrivilegedEndpoint $privilegedEndpoint -BillingModel Development  -PrivilegedEndpointCredential $cloudAdminCredential 
 ```
+
+This process can take a few minutes. The result should look like this:
+```powershell
+VERBOSE: 2018-06-27.10-46-39: Activating Azure Stack (this may take up to 10 minutes to complete).
+VERBOSE: 2018-06-27.10-51-25: Your environment is now registered and activated using the provided parameters.
+VERBOSE: 2018-06-27.10-51-25: *********************** End log: Set-AzsRegistration ***********************
+```
