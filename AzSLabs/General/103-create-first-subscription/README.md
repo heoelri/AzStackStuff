@@ -40,3 +40,11 @@ Even as an Azure Stack Administrator, you're not able to deploy resources within
 ![img6](img/newsub_1.png)
 
 5. Click on "Create" to create your Subscription
+
+**Tenant Portal**
+ 1. Reload the Tenant Portal (https://portal.local.azurestack.external)
+ 2. Click on "More services" and "Subscriptions"
+ 3. You should now see your newly created subscription
+ 
+ ![img7](img/newsub_2.png)
+ 
