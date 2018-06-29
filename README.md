@@ -16,3 +16,8 @@ Azure Stack Stuff
  * Lab 3 - [Using the Marketplace](/AzSLabs/Marketplace/201-Marketplace)
  
 **Storage**
+
+
+**PaaS/Containers**
+ * OpenShift on Azure Stack
+ * Kubernetes on Azure Stack
