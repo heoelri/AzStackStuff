@@ -1,6 +1,9 @@
 # AzStackStuff
 Azure Stack Stuff
 
+**Installation**
+ * [Install ASDK on Bare Metal](/AzSLabs/General/100-InstallASDK)
+
 **Prerequisites**
  * [Download Azure Stack Tools](/AzSLabs/General/100-Download-AzS-Tools)
  * [Register your ASDK](/AzSLabs/General/101-RegisterAzS/)
